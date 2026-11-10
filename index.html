@@ -1,0 +1,1671 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Hành trình gạo ST25 - giống gạo thơm Việt Nam, niềm tự hào của Sóc Trăng và nông nghiệp Việt Nam.">
+<title>ST25 - Hành trình gạo Việt | 12A2</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ===== 1. CÀI ĐẶT CHUNG ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --green: #174c37;
+    --green2: #286447;
+    --gold: #c49b50;
+    --cream: #f7f6f0;
+    --text: #303a32;
+    --muted: #737d74;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: var(--text);
+    background: #fff;
+    line-height: 1.8;
+}
+
+.container {
+    width: 82%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section {
+    padding: 85px 0;
+    scroll-margin-top: 115px;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: var(--green);
+    line-height: 1.35;
+    margin-bottom: 15px;
+}
+
+.section-intro {
+    color: var(--muted);
+    max-width: 700px;
+    margin-bottom: 38px;
+    font-size: 14px;
+}
+
+.small-title {
+    color: var(--gold);
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+p {
+    text-align: justify;
+    font-size: 14px;
+    line-height: 2;
+}
+
+/* ===== 2. THANH THÔNG TIN ===== */
+
+.topbar {
+    background: var(--green);
+    color: #fff;
+    padding: 7px 0;
+    font-size: 11px;
+    position: sticky;
+    top: 0;
+    z-index: 1002;
+}
+
+.topbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ===== 3. HEADER VÀ MENU ===== */
+
+header {
+    background: #fff;
+    position: sticky;
+    top: 32px;
+    z-index: 1001;
+    box-shadow: 0 3px 18px rgba(0,0,0,0.06);
+}
+
+.header-inner {
+    min-height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 45px;
+    height: 45px;
+    background: var(--green);
+    color: #e9d39b;
+    display: grid;
+    place-items: center;
+    font-size: 21px;
+    border-radius: 3px;
+}
+
+.logo-text strong {
+    display: block;
+    font-size: 17px;
+    color: var(--green);
+    letter-spacing: 1px;
+}
+
+.logo-text span {
+    display: block;
+    font-size: 9px;
+    color: #999;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    font-size: 11px;
+    font-weight: 600;
+    color: #424d45;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    background: var(--green);
+    color: white;
+    font-size: 23px;
+    padding: 5px 12px;
+    cursor: pointer;
+}
+
+/* ===== 4. BANNER TRANG CHỦ ===== */
+
+.hero {
+    min-height: 590px;
+    background:
+    linear-gradient(90deg, rgba(12,43,29,.88), rgba(12,43,29,.25)),
+    url("https://cdn2.tuoitre.vn/471584752817336320/2026/8/23/img-7319-17874436742621194371182.jpg")
+    center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    color: white;
+    scroll-margin-top: 110px;
+}
+
+.hero-content {
+    width: 82%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero-label {
+    color: #e8c77f;
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(48px, 7vw, 82px);
+    line-height: 1.12;
+    margin: 20px 0;
+    max-width: 750px;
+}
+
+.hero h1 span {
+    color: #e5c77e;
+}
+
+.hero p {
+    color: #f1f1e9;
+    max-width: 590px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 13px 27px;
+    background: #d0ad67;
+    color: #183d2d;
+    font-size: 12px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.hero-btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+.hero-note {
+    margin-top: 65px;
+    font-size: 11px;
+    color: #e8e8dc;
+    letter-spacing: 2px;
+}
+
+/* ===== 5. DẢI THÔNG TIN ===== */
+
+.info-strip {
+    background: var(--green);
+    color: white;
+    padding: 27px 0;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+}
+
+.info-item {
+    border-right: 1px solid rgba(255,255,255,.2);
+}
+
+.info-item:last-child {
+    border: none;
+}
+
+.info-item strong {
+    display: block;
+    color: #e4c77f;
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+}
+
+.info-item span {
+    font-size: 11px;
+    color: #e4e9e3;
+}
+
+/* ===== 6. HỒ QUANG CUA ===== */
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.profile-photo {
+    position: relative;
+    padding: 0 20px 20px 0;
+}
+
+.profile-photo img {
+    height: 450px;
+    object-position: center;
+}
+
+.profile-photo:after {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    border: 2px solid var(--gold);
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.profile-text p {
+    margin-top: 15px;
+}
+
+.photo-caption {
+    font-size: 10px;
+    color: #999;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* ===== 7. GIỚI THIỆU ST25 ===== */
+
+.overview {
+    background: var(--cream);
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.overview-photo img {
+    height: 390px;
+}
+
+.overview-text p {
+    margin-top: 14px;
+}
+
+.highlight {
+    display: inline-block;
+    background: #e9eddf;
+    color: var(--green);
+    padding: 5px 12px;
+    font-size: 11px;
+    font-weight: 700;
+    margin: 15px 5px 0 0;
+}
+
+/* ===== 8. NHÓM NHÀ KHOA HỌC ===== */
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.team-photo img {
+    height: 390px;
+}
+
+.team-text p {
+    margin-top: 15px;
+}
+
+/* ===== 9. QUÁ TRÌNH HÌNH THÀNH ===== */
+
+.history {
+    background: var(--cream);
+}
+
+.history-intro {
+    max-width: 800px;
+}
+
+.timeline {
+    margin-top: 40px;
+    border-left: 2px solid #d6bd83;
+    padding-left: 30px;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 0 0 30px 5px;
+}
+
+.timeline-item:before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: var(--gold);
+    border-radius: 50%;
+    position: absolute;
+    left: -37px;
+    top: 9px;
+}
+
+.timeline-item strong {
+    color: var(--green);
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.timeline-item p {
+    margin-top: 5px;
+}
+
+.history-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.history-gallery img {
+    height: 270px;
+}
+
+/* ===== 10. ĐẶC ĐIỂM GẠO ST25 ===== */
+
+.feature-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+}
+
+.feature {
+    display: grid;
+    grid-template-columns: 155px 1fr;
+    gap: 20px;
+    align-items: start;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #e9e9e3;
+}
+
+.feature img {
+    height: 165px;
+}
+
+.feature h3 {
+    color: var(--green);
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.feature p {
+    font-size: 12px;
+}
+
+/* ===== 11. THÀNH TỰU ===== */
+
+.award {
+    background: var(--green);
+    color: white;
+}
+
+.award .section-title {
+    color: white;
+}
+
+.award .section-intro {
+    color: #d3ded3;
+}
+
+.award-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.award-photo img {
+    height: 370px;
+}
+
+.award-text p {
+    color: #e2e8df;
+}
+
+.award-years {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.award-years span {
+    border: 1px solid #bfa36b;
+    color: #e8ca83;
+    padding: 8px 18px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+
+/* ===== 12. Ý NGHĨA ===== */
+
+.meaning {
+    background: #f7f6f0;
+    text-align: center;
+}
+
+.meaning-box {
+    max-width: 850px;
+    margin: auto;
+}
+
+.meaning-box p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.meaning-mark {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold);
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+/* ===== 13. TƯ LIỆU THAM KHẢO ===== */
+
+.explore {
+    background: white;
+}
+
+.explore-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.explore-card {
+    border: 1px solid #e9e9e3;
+    padding: 27px;
+    transition: .3s;
+    background: #fff;
+}
+
+.explore-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,.07);
+}
+
+.explore-card .number {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    color: #c5a25d;
+}
+
+.explore-card h3 {
+    color: var(--green);
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.explore-card p {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.explore-card a {
+    font-size: 11px;
+    color: #987438;
+    font-weight: 700;
+}
+
+/* ===== 13.1 VIDEO THAM KHẢO ===== */
+
+.video-section {
+    margin-top: 55px;
+}
+
+.video-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    color: var(--green);
+    margin-bottom: 10px;
+}
+
+.video-section .video-description {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+    aspect-ratio: 16 / 9;
+    background: #102c20;
+    overflow: hidden;
+    box-shadow: 0 12px 35px rgba(0,0,0,.12);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ===== 14. CHÂN TRANG ===== */
+
+footer {
+    background: #103625;
+    color: white;
+    padding: 50px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.35fr 1fr 1fr;
+    gap: 30px;
+    padding-bottom: 35px;
+}
+
+footer h3 {
+    font-family: 'Playfair Display', serif;
+    color: #e3c77f;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+footer p,
+footer li {
+    color: #d1ddd3;
+    font-size: 11px;
+    line-height: 2.2;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer a:hover {
+    color: #e3c77f;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,.15);
+    text-align: center;
+    padding-top: 18px;
+    color: #bdcbbf;
+    font-size: 10px;
+}
+
+/* ===== 15. NÚT LÊN ĐẦU TRANG ===== */
+
+.back-top {
+    position: fixed;
+    bottom: 22px;
+    right: 22px;
+    background: var(--gold);
+    color: var(--green);
+    padding: 10px 15px;
+    font-size: 17px;
+    z-index: 999;
+}
+
+/* ===== 16. GIAO DIỆN ĐIỆN THOẠI ===== */
+
+@media (max-width: 900px) {
+
+    .container {
+        width: 90%;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 9px;
+    }
+
+    .profile-grid,
+    .overview-grid,
+    .team-grid,
+    .award-grid {
+        gap: 25px;
+    }
+
+    .feature {
+        grid-template-columns: 115px 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .topbar .container {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .topbar .right-info {
+        display: block;
+        font-size: 9px;
+    }
+
+    header {
+        top: 32px;
+    }
+
+    .header-inner {
+        min-height: 70px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px 5%;
+        box-shadow: 0 8px 15px rgba(0,0,0,.08);
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    nav a {
+        font-size: 12px;
+        width: 100%;
+        padding: 7px 0;
+    }
+
+    .hero {
+        min-height: 520px;
+    }
+
+    .hero-content {
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 29px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .info-item {
+        border: none;
+    }
+
+    .profile-grid,
+    .overview-grid,
+    .team-grid,
+    .award-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-photo img {
+        height: 340px;
+    }
+
+    .overview-photo img,
+    .team-photo img,
+    .award-photo img {
+        height: 280px;
+    }
+
+    .feature-list {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .feature {
+        grid-template-columns: 115px 1fr;
+    }
+
+    .feature img {
+        height: 140px;
+    }
+
+    .history-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .history-gallery img {
+        height: 230px;
+    }
+
+    .explore-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .video-section h3 {
+        font-size: 21px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- THANH THÔNG TIN -->
+
+<div class="topbar">
+    <div class="container">
+        <span>TRƯỜNG THPT HOÀNG DIỆU · LỚP 12A2</span>
+        <span class="right-info" id="clock">Đang cập nhật thời gian...</span>
+    </div>
+</div>
+
+<!-- HEADER -->
+
+<header>
+    <div class="container header-inner">
+
+        <a href="#trang-chu" class="logo">
+            <div class="logo-icon">🌾</div>
+
+            <div class="logo-text">
+                <strong>HÀNH TRÌNH GẠO VIỆT</strong>
+                <span>ST25 · SÓC TRĂNG</span>
+            </div>
+        </a>
+
+        <button class="menu-btn" onclick="toggleMenu()" aria-label="Mở menu">☰</button>
+
+        <nav id="menu">
+            <a href="#trang-chu">TRANG CHỦ</a>
+            <a href="#ho-quang-cua">ĐÔI NÉT VỀ HỒ QUANG CUA</a>
+            <a href="#gioi-thieu">GIỚI THIỆU ST25</a>
+            <a href="#nhom-nghien-cuu">NHÀ KHOA HỌC</a>
+            <a href="#qua-trinh">QUÁ TRÌNH</a>
+            <a href="#dac-diem">ĐẶC ĐIỂM</a>
+            <a href="#thanh-tuu">THÀNH TỰU</a>
+            <a href="#y-nghia">Ý NGHĨA</a>
+        </nav>
+
+    </div>
+</header>
+
+<!-- TRANG CHỦ -->
+
+<section class="hero" id="trang-chu">
+    <div class="hero-content">
+
+        <div class="hero-label">
+            TỪ ĐỒNG RUỘNG SÓC TRĂNG ĐẾN THẾ GIỚI
+        </div>
+
+        <h1>
+            Hạt gạo Việt<br>
+            <span>vươn tầm thế giới</span>
+        </h1>
+
+        <p>
+            Câu chuyện về giống lúa ST25 – thành quả của hành trình
+            nghiên cứu, sáng tạo và tâm huyết của những nhà khoa học
+            Việt Nam.
+        </p>
+
+        <a href="#gioi-thieu" class="hero-btn">
+            KHÁM PHÁ ST25 &nbsp; →
+        </a>
+
+        <div class="hero-note">
+            MỘT GIỐNG LÚA · MỘT HÀNH TRÌNH · NIỀM TỰ HÀO VIỆT NAM
+        </div>
+
+    </div>
+</section>
+
+<!-- THÔNG TIN -->
+
+<div class="info-strip">
+    <div class="container info-grid">
+
+        <div class="info-item">
+            <strong>ST25</strong>
+            <span>Giống lúa thơm Việt Nam</span>
+        </div>
+
+        <div class="info-item">
+            <strong>SÓC TRĂNG</strong>
+            <span>Nơi nghiên cứu và chọn tạo</span>
+        </div>
+
+        <div class="info-item">
+            <strong>2019 · 2023 · 2025</strong>
+            <span>Ba lần đạt giải Nhất thế giới</span>
+        </div>
+
+    </div>
+</div>
+
+<!-- 1. ĐÔI NÉT VỀ HỒ QUANG CUA -->
+
+<section class="section" id="ho-quang-cua">
+    <div class="container profile-grid">
+
+        <div class="profile-photo">
+
+            <img
+                src="images/ho-quang-cua.jpg"
+                alt="Kỹ sư Hồ Quang Cua"
+                loading="lazy">
+
+            <div class="photo-caption">
+                Kỹ sư Hồ Quang Cua – người dành nhiều tâm huyết
+                cho nghiên cứu các giống lúa thơm.
+            </div>
+
+        </div>
+
+        <div class="profile-text">
+
+            <div class="small-title">
+                01 · NHÂN VẬT TIÊU BIỂU
+            </div>
+
+            <h2 class="section-title">
+                Đôi nét về kỹ sư,<br>
+                Anh hùng Lao động<br>
+                Hồ Quang Cua
+            </h2>
+
+            <p>
+                Kỹ sư Hồ Quang Cua sinh ra tại Sóc Trăng, tốt nghiệp
+                ngành Trồng trọt, Trường Đại học Cần Thơ năm 1978.
+                Sau khi ra trường, ông công tác trong ngành nông
+                nghiệp tỉnh Sóc Trăng và từng giữ chức Phó Giám đốc
+                Sở Nông nghiệp và Phát triển nông thôn. Với niềm
+                đam mê nghiên cứu khoa học, ông dành nhiều năm tâm
+                huyết lai tạo và phát triển các giống lúa thơm chất
+                lượng cao. Thành tựu tiêu biểu nhất là giống lúa
+                ST25, đạt giải Gạo ngon nhất thế giới năm 2019.
+                Những đóng góp của ông đã góp phần nâng cao giá trị
+                hạt gạo Việt Nam, cải thiện đời sống người nông dân
+                và khẳng định vị thế nông nghiệp Việt Nam trên
+                trường quốc tế. Năm 2012, ông được phong tặng
+                danh hiệu Anh hùng Lao động.
+            </p>
+
+        </div>
+    </div>
+</section>
+
+<!-- 2. GIỚI THIỆU ST25 -->
+
+<section class="section overview" id="gioi-thieu">
+    <div class="container overview-grid">
+
+        <div class="overview-text">
+
+            <div class="small-title">
+                02 · GIỐNG LÚA ĐẶC SẢN
+            </div>
+
+            <h2 class="section-title">
+                ST25 – Dấu ấn<br>
+                từ vùng đất Sóc Trăng
+            </h2>
+
+            <p>
+                ST25 là một giống lúa thơm chất lượng cao của Việt Nam,
+                được nghiên cứu và lai tạo bởi kỹ sư Hồ Quang Cua cùng
+                các cộng sự, tiêu biểu là Tiến sĩ Trần Tấn Phương và
+                Thạc sĩ Nguyễn Thị Thu Hương. Giống lúa này được chọn
+                tạo tại tỉnh Sóc Trăng, thuộc vùng Đồng bằng sông
+                Cửu Long. Tên gọi ST25 mang ý nghĩa đặc biệt, trong
+                đó ST là viết tắt của Sóc Trăng – vùng đất đã gắn
+                liền với quá trình nghiên cứu và phát triển dòng
+                lúa thơm nổi tiếng này.
+            </p>
+
+            <p>
+                Để tạo nên thành công của ST25 là cả một hành trình
+                nghiên cứu, lai tạo và chọn lọc kéo dài nhiều năm.
+                Trước khi ST25 ra đời, nhóm nghiên cứu đã lần lượt
+                phát triển nhiều giống lúa thuộc dòng ST như ST3,
+                ST5, ST10, ST19, ST20 và ST24. Mỗi thế hệ đều được
+                cải tiến về năng suất, chất lượng hạt gạo, hương
+                thơm và khả năng thích nghi với điều kiện canh tác.
+                Trên nền tảng những thành tựu đó, giống lúa ST25
+                tiếp tục được nghiên cứu, hoàn thiện và chính thức
+                tạo nên dấu ấn đặc biệt trong ngành lúa gạo Việt Nam.
+            </p>
+
+            <span class="highlight">ST – Sóc Trăng</span>
+            <span class="highlight">Gạo thơm chất lượng cao</span>
+
+        </div>
+
+        <div class="overview-photo">
+
+            <img
+                src="images/gao-st25.jpg"
+                alt="Hạt gạo ST25"
+                loading="lazy">
+
+            <div class="photo-caption">
+                Hạt gạo ST25 với hình dáng thon dài và màu trắng trong.
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- 3. NHÓM NGHIÊN CỨU -->
+
+<section class="section" id="nhom-nghien-cuu">
+    <div class="container team-grid">
+
+        <div class="team-photo">
+
+            <img
+                src="images/nhom-nghien-cuu-st25.jpg"
+                alt="Nhóm nghiên cứu giống lúa ST25"
+                loading="lazy">
+
+            <div class="photo-caption">
+                Các nhà khoa học gắn bó với quá trình nghiên cứu
+                và phát triển giống lúa ST25.
+            </div>
+
+        </div>
+
+        <div class="team-text">
+
+            <div class="small-title">
+                03 · NHỮNG NGƯỜI ĐỨNG SAU THÀNH CÔNG
+            </div>
+
+            <h2 class="section-title">
+                Ai là người nghiên cứu<br>
+                và chọn tạo ST25?
+            </h2>
+
+            <p>
+                Giống lúa ST25 là thành quả nghiên cứu và lai tạo
+                của nhóm 3 nhà khoa học tỉnh Sóc Trăng, gồm:
+                Anh hùng Lao động, kỹ sư Hồ Quang Cua, tiến sĩ
+                Trần Tấn Phương và thạc sĩ Nguyễn Thị Thu Hương.
+                Trong đó, kỹ sư Hồ Quang Cua là người khởi xướng
+                và giữ vai trò trưởng nhóm nghiên cứu. Ông tốt
+                nghiệp ngành Trồng trọt, Trường Đại học Cần Thơ
+                năm 1978 và có nhiều năm gắn bó với lĩnh vực
+                nông nghiệp, đặc biệt là nghiên cứu, phát triển
+                các giống lúa thơm chất lượng cao.
+            </p>
+
+            <p>
+                Đồng hành cùng ông là tiến sĩ Trần Tấn Phương,
+                người có nhiều năm trực tiếp nghiên cứu, lai tạo
+                giống lúa và có chuyên môn sâu về di truyền,
+                chọn giống; cùng thạc sĩ Nguyễn Thị Thu Hương,
+                một cộng sự quan trọng của nhóm. Quá trình tạo
+                ra ST25 đòi hỏi nhiều năm thu thập nguồn gen,
+                lai tạo giữa các giống lúa bố mẹ, chọn lọc qua
+                nhiều vụ mùa và khảo nghiệm để tìm ra giống lúa
+                có chất lượng tốt, ổn định. Đây là hành trình
+                nghiên cứu lâu dài, với nhiều năm phát triển
+                dòng lúa ST. Vì vậy, ST25 không phải thành
+                quả của riêng một cá nhân mà là kết tinh từ
+                kiến thức, kinh nghiệm và sự đóng góp bền bỉ
+                của cả tập thể các nhà khoa học.
+            </p>
+
+        </div>
+    </div>
+</section>
+
+<!-- 4. QUÁ TRÌNH HÌNH THÀNH VÀ PHÁT TRIỂN -->
+
+<section class="section history" id="qua-trinh">
+    <div class="container">
+
+        <div class="small-title">
+            04 · HÀNH TRÌNH NGHIÊN CỨU
+        </div>
+
+        <h2 class="section-title">
+            Quá trình hình thành<br>
+            và phát triển ST25
+        </h2>
+
+        <p class="section-intro history-intro">
+            Đằng sau một giống lúa nổi tiếng là nhiều năm nghiên cứu,
+            thử nghiệm, chọn lọc và hoàn thiện của các nhà khoa học.
+        </p>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <strong>Những năm đầu nghiên cứu</strong>
+                <p>
+                    Nhóm nghiên cứu tiến hành công tác lai tạo lúa.
+                    Họ thu thập nhiều nguồn gen, tìm kiếm và chọn lọc
+                    những đặc tính tốt phục vụ quá trình lai tạo.
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <strong>Những năm tiếp theo</strong>
+                <p>
+                    Các thế hệ lúa được gieo trồng, theo dõi
+                    và chọn lọc qua nhiều vụ liên tiếp nhằm
+                    tìm ra những dòng có đặc tính phù hợp.
+                    Quá trình này đòi hỏi sự kiên trì và
+                    đánh giá kỹ lưỡng về chất lượng.
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <strong>Quá trình phát triển dòng ST</strong>
+                <p>
+                    Nhóm nghiên cứu tiếp tục phát triển nhiều
+                    giống lúa thuộc dòng ST, từng bước cải thiện
+                    năng suất, chất lượng hạt gạo và hương thơm.
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <strong>Năm 2019</strong>
+                <p>
+                    Sau nhiều năm hoàn thiện, ST25 khẳng định
+                    chất lượng và xuất sắc giành giải thưởng
+                    "Gạo ngon nhất thế giới" (World's Best Rice).
+                </p>
+            </div>
+
+        </div>
+
+        <div class="history-gallery">
+
+            <div>
+                <img
+                    src="images/khao-sat-dong-ruong.jpg"
+                    alt="Nhóm nghiên cứu khảo sát ruộng lúa"
+                    loading="lazy">
+
+                <div class="photo-caption">
+                    Các nhà nghiên cứu khảo sát thực tế trên đồng ruộng.
+                </div>
+            </div>
+
+            <div>
+                <img
+                    src="images/canh-dong-lua-st25.jpg"
+                    alt="Ruộng lúa ST25"
+                    loading="lazy">
+
+                <div class="photo-caption">
+                    Những cánh đồng lúa trong quá trình canh tác.
+                </div>
+            </div>
+
+        </div>
+
+        <p style="margin-top:30px;">
+            Đó là một sự đầu tư về thời gian, kiến thức
+            khoa học và sự kiên trì của những người nghiên cứu.
+        </p>
+
+    </div>
+</section>
+
+<!-- 5. ĐẶC ĐIỂM NỔI BẬT -->
+
+<section class="section" id="dac-diem">
+    <div class="container">
+
+        <div class="small-title">
+            05 · CHẤT LƯỢNG ĐẶC TRƯNG
+        </div>
+
+        <h2 class="section-title">
+            Đặc điểm nổi bật<br>
+            của gạo ST25
+        </h2>
+
+        <p class="section-intro">
+            Từ hình dáng hạt gạo đến hương thơm và chất lượng cơm,
+            ST25 có nhiều đặc điểm tạo nên dấu ấn riêng.
+        </p>
+
+        <div class="feature-list">
+
+            <!-- HẠT GẠO -->
+
+            <div class="feature">
+
+                <img
+                    src="images/hat-gao-st25.jpg"
+                    alt="Hình dáng hạt gạo ST25"
+                    loading="lazy">
+
+                <div>
+                    <h3>01. Hình dáng hạt gạo</h3>
+
+                    <p>
+                        Gạo ST25 nổi bật với hình dáng hạt thon dài,
+                        các hạt khá đồng đều, màu trắng trong và
+                        có vẻ ngoài sáng bóng, đẹp mắt. Đây là một
+                        trong những đặc điểm giúp gạo ST25 tạo
+                        ấn tượng với người tiêu dùng. Nhờ hình
+                        dáng đẹp cùng chất lượng hạt tốt, ST25
+                        được xếp vào nhóm gạo thơm chất lượng cao
+                        của Việt Nam.
+                    </p>
+                </div>
+            </div>
+
+            <!-- HƯƠNG THƠM -->
+
+            <div class="feature">
+
+                <img
+                    src="images/huong-thom-gao.jpg"
+                    alt="Gạo và món ăn từ gạo"
+                    loading="lazy">
+
+                <div>
+                    <h3>02. Hương thơm</h3>
+
+                    <p>
+                        Hương thơm là một trong những đặc điểm tạo
+                        nên nét riêng của gạo ST25. Gạo có mùi thơm
+                        tự nhiên, dịu nhẹ, kết hợp giữa hương lá dứa
+                        và hương cốm non. Khi vo gạo và nấu chín,
+                        mùi thơm lan tỏa nhẹ nhàng, tạo cảm giác
+                        hấp dẫn. Cơm ST25 sau khi nấu vẫn giữ được
+                        hương thơm đặc trưng, kể cả khi để nguội.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CHẤT LƯỢNG CƠM -->
+
+            <div class="feature">
+
+                <img
+                    src="images/com-st25.jpg"
+                    alt="Cơm trắng ST25"
+                    loading="lazy">
+
+                <div>
+                    <h3>03. Chất lượng cơm</h3>
+
+                    <p>
+                        Gạo ST25 khi nấu thành cơm có chất lượng
+                        tốt, nổi bật với độ dẻo mềm vừa phải,
+                        hạt cơm trắng, bóng và có vị ngọt tự nhiên.
+                        Cơm không quá khô cũng không bị nhão nếu
+                        được nấu với lượng nước phù hợp. Khi để
+                        nguội, cơm vẫn giữ được độ mềm dẻo và
+                        hương thơm đặc trưng.
+                    </p>
+                </div>
+            </div>
+
+            <!-- KHẢ NĂNG THÍCH NGHI -->
+
+            <div class="feature">
+
+                <img
+                    src="images/lua-st25.jpg"
+                    alt="Cánh đồng lúa"
+                    loading="lazy">
+
+                <div>
+                    <h3>04. Khả năng thích nghi</h3>
+
+                    <p>
+                        ST25 có khả năng thích nghi tương đối tốt
+                        với điều kiện canh tác tại Đồng bằng sông
+                        Cửu Long, đặc biệt là những vùng sản xuất
+                        lúa – tôm có điều kiện phù hợp. Đây là một
+                        trong những yếu tố giúp giống lúa được
+                        nhiều nông dân quan tâm và lựa chọn sản xuất.
+                    </p>
+                </div>
+            </div>
+
+            <!-- GIÁ TRỊ SỬ DỤNG -->
+
+            <div class="feature">
+
+                <img
+                    src="images/gao-st25-thanh-pham.jpg"
+                    alt="Gạo ST25 thành phẩm"
+                    loading="lazy">
+
+                <div>
+                    <h3>05. Giá trị sử dụng</h3>
+
+                    <p>
+                        Nhờ hương thơm tự nhiên, độ dẻo mềm vừa
+                        phải và vị ngọt đặc trưng, gạo ST25 phù
+                        hợp với những bữa cơm gia đình cũng như
+                        nhu cầu sử dụng gạo thơm chất lượng cao.
+                        Chất lượng của giống lúa góp phần nâng
+                        cao giá trị hạt gạo Việt Nam và tạo
+                        thêm niềm tin đối với người tiêu dùng.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- 6. THÀNH TỰU -->
+
+<section class="section award" id="thanh-tuu">
+    <div class="container">
+
+        <div class="small-title">
+            06 · DẤU ẤN QUỐC TẾ
+        </div>
+
+        <h2 class="section-title">
+            Thành tựu và vị thế<br>
+            của gạo ST25
+        </h2>
+
+        <div class="award-grid">
+
+            <div class="award-text">
+
+                <p>
+                    Gạo ST25 của Việt Nam lần đầu tiên đạt giải Nhất
+                    cuộc thi “Gạo ngon nhất thế giới” vào năm 2019
+                    tại Manila (Philippines), dưới sự nghiên cứu
+                    và lai tạo của kỹ sư Hồ Quang Cua cùng các
+                    cộng sự. Thành tích này đã thu hút sự chú ý
+                    của thị trường quốc tế, tạo niềm tự hào cho
+                    ngành nông nghiệp Việt Nam. Tiếp nối thành
+                    công, ST25 tiếp tục giành giải Nhất vào năm
+                    2023 tại Philippines và năm 2025 tại Phnom Penh
+                    (Campuchia), đồng giải với gạo Phka Romdoul
+                    của nước chủ nhà. Đặc biệt, năm 2026, ST25
+                    tiếp tục đạt giải Nhì tại Philippines.
+                    Những thành tích này đã khẳng định chất lượng,
+                    thương hiệu và vị thế ngày càng cao của gạo
+                    Việt Nam trên thị trường quốc tế.
+                </p>
+
+                <div class="award-years">
+                    <span>2019</span>
+                    <span>2023</span>
+                    <span>2025</span>
+                    <span>2026</span>
+                </div>
+
+            </div>
+
+            <div class="award-photo">
+
+                <img
+                    src="images/giai-thuong-st25-2025.webp"
+                    alt="Lễ trao cúp gạo ngon nhất thế giới năm 2025"
+                    loading="lazy">
+
+                <div class="photo-caption" style="color:#cdd7cd;">
+                    Lễ trao cúp Gạo ngon nhất thế giới năm 2025.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- 7. Ý NGHĨA -->
+
+<section class="section meaning" id="y-nghia">
+    <div class="container meaning-box">
+
+        <div class="meaning-mark">“</div>
+
+        <div class="small-title">
+            07 · GIÁ TRỊ ĐỐI VỚI VIỆT NAM
+        </div>
+
+        <h2 class="section-title">
+            Ý nghĩa của giống lúa ST25<br>
+            đối với Việt Nam
+        </h2>
+
+        <p>
+            Sự ra đời của giống lúa ST25 mang nhiều ý nghĩa quan
+            trọng đối với nền nông nghiệp nước ta. Đây là thành
+            quả của quá trình nghiên cứu, sáng tạo và lao động
+            bền bỉ của các nhà khoa học Việt Nam. ST25 góp phần
+            nâng cao giá trị hạt gạo, cải thiện thu nhập cho
+            người nông dân và thúc đẩy phát triển nền nông nghiệp
+            chất lượng cao. Đồng thời, giống lúa này còn quảng
+            bá hình ảnh đất nước, con người Việt Nam đến bạn bè
+            quốc tế. Đặc biệt, ST25 là niềm tự hào dân tộc,
+            khẳng định trí tuệ và khả năng sáng tạo của người
+            Việt Nam.
+        </p>
+
+    </div>
+</section>
+
+<!-- 8. TƯ LIỆU THAM KHẢO -->
+
+<section class="section explore" id="kham-pha">
+    <div class="container">
+
+        <div class="small-title">
+            GÓC TƯ LIỆU · TÌM HIỂU THÊM
+        </div>
+
+        <h2 class="section-title">
+            Xem và khám phá
+        </h2>
+
+        <p class="section-intro">
+            Tìm hiểu thêm về hành trình của hạt gạo ST25
+            qua những bài viết và tư liệu tham khảo.
+        </p>
+
+        <div class="explore-grid">
+
+            <div class="explore-card">
+                <div class="number">01</div>
+
+                <h3>Người chắp cánh hạt gạo Việt</h3>
+
+                <p>
+                    Tìm hiểu thêm về hành trình nghiên cứu
+                    và những đóng góp của kỹ sư Hồ Quang Cua.
+                </p>
+
+                <a href="https://baodautu.vn/nguoi-chap-canh-hat-gao-viet-nam-vuon-tam-the-gioi-d114974.html"
+                   target="_blank" rel="noopener noreferrer">
+                    ĐỌC BÀI VIẾT →
+                </a>
+            </div>
+
+            <div class="explore-card">
+                <div class="number">02</div>
+
+                <h3>Ba lần chinh phục thế giới</h3>
+
+                <p>
+                    Khám phá những dấu ấn của gạo ST25
+                    tại cuộc thi Gạo ngon nhất thế giới.
+                </p>
+
+                <a href="https://baochinhphu.vn/st25-hat-gao-viet-nam-3-lan-chinh-phuc-ngoi-vuong-the-gioi-102260202143038696.htm"
+                   target="_blank" rel="noopener noreferrer">
+                    ĐỌC BÀI VIẾT →
+                </a>
+            </div>
+
+            <div class="explore-card">
+                <div class="number">03</div>
+
+                <h3>Hành trình của giống lúa ST25</h3>
+
+                <p>
+                    Cùng tìm hiểu về quá trình nghiên cứu,
+                    chọn tạo và phát triển giống lúa thơm.
+                </p>
+
+                <a href="https://vtcnews.vn/bi-thoa-ma-viec-mang-gao-st25-di-thi-ky-su-ho-quang-cua-lan-dau-len-tieng-ar607805.html"
+                   target="_blank" rel="noopener noreferrer">
+                    ĐỌC BÀI VIẾT →
+                </a>
+            </div>
+
+        </div>
+
+        <!-- VIDEO YOUTUBE -->
+
+        <div class="video-section">
+
+            <div class="small-title">
+                VIDEO · TƯ LIỆU TRỰC QUAN
+            </div>
+
+            <h3>Khám phá thêm về gạo ST25</h3>
+
+            <p class="video-description">
+                Video tư liệu giúp tìm hiểu thêm về câu chuyện
+                và hành trình của giống gạo ST25.
+            </p>
+
+            <div class="video-wrapper">
+
+                <iframe
+                    src="https://www.youtube.com/embed/SVz5vViWJ2s"
+                    title="Video giới thiệu về gạo ST25"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- CHÂN TRANG -->
+
+<footer>
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <!-- CỘT 1: THÔNG TIN THỰC HIỆN -->
+
+            <div>
+                <h3>Thông tin thực hiện</h3>
+
+                <ul>
+                    <li>Trường THPT Hoàng Diệu</li>
+                    <li>Lớp 12A2</li>
+                    <li>Môn học: Tin học 12</li>
+                </ul>
+            </div>
+
+            <!-- CỘT 2: BIÊN SOẠN NỘI DUNG -->
+
+            <div>
+                <h3>Biên soạn nội dung</h3>
+
+                <ul>
+                    <li>Phạm Lâm Tuấn Đạt</li>
+                    <li>Trương Quỳnh Như</li>
+                    <li>Lê Ngọc Duyên</li>
+                    <li>Hà Đại Vĩ</li>
+                    <li>Sơn Ngọc Anh</li>
+                    <li>Lê Vũ Khanh</li>
+                </ul>
+            </div>
+
+            <!-- CỘT 3: NỘI DUNG -->
+
+            <div>
+                <h3>Nội dung</h3>
+
+                <ul>
+                    <li><a href="#ho-quang-cua">Đôi nét về Hồ Quang Cua</a></li>
+                    <li><a href="#gioi-thieu">Giới thiệu ST25</a></li>
+                    <li><a href="#nhom-nghien-cuu">Nhóm nghiên cứu</a></li>
+                    <li><a href="#qua-trinh">Quá trình phát triển</a></li>
+                    <li><a href="#dac-diem">Đặc điểm nổi bật</a></li>
+                    <li><a href="#thanh-tuu">Thành tựu</a></li>
+                    <li><a href="#y-nghia">Ý nghĩa</a></li>
+                </ul>
+            </div>
+
+            <!-- CỘT 4: THIẾT KẾ WEBSITE -->
+
+            <div>
+                <h3>Thiết kế website</h3>
+
+                <ul>
+                    <li>Ngô Huỳnh Đức</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- BẢN QUYỀN -->
+
+        <div class="footer-bottom">
+            © 2026 Huỳnh Đức. Mọi quyền được bảo lưu.
+        </div>
+
+    </div>
+</footer>
+
+<!-- NÚT LÊN ĐẦU TRANG -->
+
+<a href="#trang-chu" class="back-top" title="Lên đầu trang">↑</a>
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+// Hiện hoặc ẩn menu trên điện thoại
+
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+}
+
+// Đóng menu sau khi chọn mục
+
+var menuLinks = document.querySelectorAll("#menu a");
+
+menuLinks.forEach(function(link) {
+    link.onclick = function() {
+        document.getElementById("menu").classList.remove("show");
+    };
+});
+
+// Đồng hồ ngày và giờ
+
+function updateClock() {
+
+    var now = new Date();
+
+    var options = {
+        weekday: "long",
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric"
+    };
+
+    var date = now.toLocaleDateString("vi-VN", options);
+    var time = now.toLocaleTimeString("vi-VN");
+
+    document.getElementById("clock").innerHTML =
+        date + " &nbsp; | &nbsp; " + time;
+}
+
+updateClock();
+
+setInterval(updateClock, 1000);
+
+</script>
+
+</body>
+</html>
